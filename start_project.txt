@@ -3,7 +3,8 @@
 закачка кода в github "git push origin master"
 обновление репозитория в github
 git add -A
-git commit -m "Added files and changes required for deployment to heroku"
+git commit -m "initial commit"
 git push origin master
 старт сервера "python manage.py runserver"
 миграция python manage.py migrate.
+тестирование python manage.py test
