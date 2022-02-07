@@ -1,3 +1,7 @@
 старт виртуального окружения "pipenv shell"
 закачка кода с git hub в heroku "git push heroku master"
 закачка кода в github "git push origin master"
+обновление репозитория в github
+git add -A
+git commit -m "Added files and changes required for deployment to heroku"
+git push origin master
