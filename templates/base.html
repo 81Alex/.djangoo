@@ -1,7 +1,44 @@
 <!-- templates/base.html -->
-<header>
-    <a href="{% url 'home' %}">Home</a> | <a href="{% url 'about' %}">About</a>
-</header>
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
 
-{% block content %}
-{% endblock content %}
+
+
+<head>
+    <meta charset="UTF-8">
+    <title>Главная страница</title>
+    <link rel="stylesheet" href="{% static 'css/stylesheet.css'%}" type="text/css">
+    <link rel="icon" href="{% static 'favicon.ico' %}">
+    <script src="{% static 'js/script.js' %}"></script>
+</head>
+
+<body>
+    <div class="image_move">
+        <img class="img1" src="{% static 'img/x-wing_r.png' %}" alt="Ло">
+    </div>
+    <aside>
+        <img src="{% static 'img/R2D2.png' %}" alt="Лого">
+        <span class="logo">R2D2</span>
+        <h3>Навигация</h3>
+        <ul>
+            <a href="{% url 'home' %}">
+                <li>Главная</li>
+            </a>
+            <a href="{% url 'about' %}">
+                <li>О нас</li>
+            </a>
+            <a href="">
+                <li>Контакты</li>
+            </a>
+
+        </ul>
+        <a href="mailto:@mail.ru" class="email-link">@mail.ru</a>
+    </aside>
+
+
+    {% block content %} {% endblock content %}
+
+</body>
+
+</html>

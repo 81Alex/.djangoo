@@ -1,0 +1,172 @@
+/* python manage.py runserver */
+
+body {
+    background-image: url("../img/flowers.jpg");
+    background-size: cover;
+}
+
+aside {
+    background: #4d320079;
+    width: 15%;
+    padding: 15px;
+    height: 100vh;
+    color: rgb(61, 250, 3);
+    border-right: 5px solid #fff8;
+    margin-left: -20px;
+    margin-top: -30px;
+}
+
+aside img {
+    width: 80px;
+}
+
+aside.logo {
+    font-family: 'ofont.ru_Airfool';
+    font-size: 60px;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+aside h3 {
+    font-family: 'AppetiteNew';
+    font-size: 25px;
+    margin-top: 0px;
+    color: #f9fd0f;
+}
+
+aside ul {
+    list-style: none;
+}
+
+aside ul li {
+    font-family: 'AppetiteNew';
+    font-size: 25px;
+    color: aqua;
+    display: block;
+    margin-left: -20px;
+    margin-top: 20px;
+    transition: all .6s ease;
+}
+
+aside ul li:hover,
+aside ul a:hover {
+    color: rgb(255, 166, 0);
+    text-decoration: none;
+    transform: scale(1.1);
+}
+
+h1 {
+    color: hsl(150, 98%, 50%);
+    font-family: 'AppetiteNew';
+    font-size: 50px;
+    /* padding: 0px 2px 40px 40px; */
+}
+
+.email-link {
+    padding-left: 30px;
+    background-image: url("../img/min_1.png");
+    background-position: left center;
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+}
+
+.features h1,
+.abu h1 {
+    float: left;
+    color: hsla(221, 98%, 50%, 0.603);
+    font-family: 'ofont.ru_Airfool';
+    font-size: 90px;
+    margin-top: -750px;
+    margin-left: 43%;
+}
+
+.features button {
+    font-family: 'ofont.ru_Airfool';
+    font-size: 50px;
+    color: hsl(221, 98%, 50%);
+    background: #f03d0679;
+    float: left;
+    margin-top: -520px;
+    margin-left: 55%;
+    border-radius: 25px;
+}
+
+.features button:hover {
+    color: rgb(255, 166, 0);
+    text-decoration: none;
+    transform: scale(1.1);
+}
+
+
+/* Современные браузеры, кроме Chrome, Opera, Safari */
+
+@keyframes go-right {
+    /* назовём анимацию: "go-left-right" */
+    from {
+        left: 15%;
+        /* от: left: 0px */
+    }
+    to {
+        left: calc(50% - 150px);
+        /* до: left: 100%-50px */
+    }
+}
+
+.image_move {
+    /* применить анимацию go-left-right */
+    /* продолжительность 3s */
+    /* количество раз: бесконечное (infinite) */
+    /* менять направление анимации каждый раз (alternate) */
+    animation: go-right 5s infinite alternate;
+    /* -webkit-animation: go-left-right 5s infinite alternate; */
+    position: relative;
+    width: 50px;
+    height: 20px;
+}
+
+
+/* Префикс для Chrome, Opera, Safari */
+
+
+/* @-webkit-keyframes go-right {
+    from {
+        left: 0px;
+    }
+    to {
+        left: calc(30% - 150px);
+    }
+} */
+
+@font-face {
+    font-family: "ofont.ru_Airfool";
+    src: url("../fonts/ofont.ru_Airfool.ttf");
+}
+
+@font-face {
+    font-family: "AppetiteNew";
+    src: url("../fonts/AppetiteNew.ttf");
+}
+
+#ex3 {
+    font-family: 'ofont.ru_Airfool';
+    font-size: 50px;
+    float: left;
+    margin-top: -520px;
+    margin-left: 55%;
+}
+
+#ex3 img {
+    transition-duration: 1s;
+    -moz-transition-duration: 1s;
+    -o-transition-duration: 1s;
+}
+
+#ex3 img:hover {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transition-duration: 1s;
+    -moz-transition-duration: 1s;
+    -o-transition-duration: 1s;
+}
