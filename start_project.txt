@@ -1,12 +1,19 @@
 старт виртуального окружения "pipenv shell"
- с git hub в heroku "git push heroku master"
+ 
 закачка кода в github "git push origin master"
 обновление репозитория в github
 git add -A
 git commit -m "initial commit"
 git push origin master
-старт сервера "python manage.py runserver"
+git push origin main
+старт local сервера python manage.py runserver
 миграция python manage.py migrate
+######## heroku ##################### 
+с git hub в heroku "git push heroku master"
+ с git hub в heroku git push heroku main
+heroku logs
+start heroku server heroku open
+
 
 
 тестирование python manage.py test
