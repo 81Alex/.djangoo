@@ -13,7 +13,7 @@ git push origin main
  с git hub в heroku git push heroku main
 heroku logs
 start heroku server heroku open
-
+pip3 freeze > requirements.txt
 
 
 тестирование python manage.py test
