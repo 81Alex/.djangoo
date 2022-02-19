@@ -1,7 +1,7 @@
 /* python manage.py runserver */
 
 body {
-    background-image: url("../img/flowers.jpg");
+    background-image: url("C:/.djangoo/static/img/flowers.jpg");
     background-size: cover;
 }
 
@@ -64,7 +64,7 @@ h1 {
 
 .email-link {
     padding-left: 30px;
-    background-image: url("../img/min_1.png");
+    background-image: url("C:/.djangoo/static/img/min_1.png");
     background-position: left center;
     background-size: 20px 20px;
     background-repeat: no-repeat;
@@ -139,12 +139,12 @@ h1 {
 
 @font-face {
     font-family: "ofont.ru_Airfool";
-    src: url("../fonts/ofont.ru_Airfool.ttf");
+    src: url("C:/.djangoo/static/fonts/ofont.ru_Airfool.ttf");
 }
 
 @font-face {
     font-family: "AppetiteNew";
-    src: url("../fonts/AppetiteNew.ttf");
+    src: url("C:/.djangoo/static/fonts/AppetiteNew.ttf");
 }
 
 #ex3 {
